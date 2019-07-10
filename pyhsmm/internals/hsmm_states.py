@@ -500,6 +500,11 @@ class HSMMStatesEigen(HSMMStatesPython):
     def messages_backwards(self):
         # NOTE: np.maximum calls are because the C++ code doesn't do
         # np.logaddexp(-inf,-inf) = -inf, it likes nans instead
+
+        #TODO:Solve issue of not getting .pyx imports
+        #import pyximport
+        #pyximport.install()
+
         from pyhsmm.internals.hsmm_messages_interface import messages_backwards_log
         betal, betastarl = messages_backwards_log(
                 np.maximum(self.trans_matrix,1e-50),self.aBl,np.maximum(self.aDl,-1000000),

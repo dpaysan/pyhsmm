@@ -1,20 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="64fb9f47-a3c8-4967-a12e-4a70f4577fcb" name="Default Changelist" comment="" />
+    <list default="true" id="64fb9f47-a3c8-4967-a12e-4a70f4577fcb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/pyhsmm_sandbox.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pyhsmm-develop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pyhsmm-develop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/pyhsmm-0.1.6-py3.6-linux-x86_64.egg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/pyhsmm-0.1.6-py3.6-linux-x86_64.egg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyhsmm/internals/hsmm_states.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyhsmm/internals/hsmm_states.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/examples/hmm-EM.py">
+        <entry file="file://$PROJECT_DIR$/examples/pyhsmm_sandbox.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="972">
-              <caret line="56" column="10" selection-start-line="56" selection-start-column="10" selection-end-line="56" selection-end-column="10" />
+            <state relative-caret-position="132">
+              <caret line="140" selection-start-line="140" selection-end-line="140" />
+              <folding>
+                <element signature="e#218#236#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file:///usr/share/miniconda3/envs/virtamed/lib/python3.6/site-packages/pybasicbayes-0.2.4-py3.6-linux-x86_64.egg/pybasicbayes/distributions/mixturedistribution.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="181">
+              <caret line="51" selection-start-line="51" selection-end-line="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pyhsmm/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="460" selection-start-line="460" selection-end-line="460" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pyhsmm/internals/transitions.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="84" selection-start-line="84" selection-end-line="84" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file:///usr/share/miniconda3/envs/virtamed/lib/python3.6/site-packages/pybasicbayes-0.2.4-py3.6-linux-x86_64.egg/pybasicbayes/distributions/multinomial.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="129" selection-start-line="129" selection-end-line="129" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pyhsmm/internals/hsmm_states.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="358">
+              <caret line="504" column="9" selection-start-line="504" selection-start-column="9" selection-end-line="504" selection-end-column="9" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -22,18 +92,49 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/examples/hsmm.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pyhsmm/internals/hmm_messages_interface.cpp">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pyhsmm/internals/hmm_states.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>for</find>
       <find>prange(_customers.shape[0]):</find>
+      <find>Poisson</find>
+      <find>mask</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/examples/pyhsmm_sandbox.py" />
+        <option value="$PROJECT_DIR$/pyhsmm/internals/hsmm_states.py" />
+      </list>
+    </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="55" />
@@ -41,6 +142,7 @@
     <option name="width" value="773" />
     <option name="height" value="875" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -50,13 +152,44 @@
         <subPane>
           <expand>
             <path>
-              <item name="pyhsmm-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pyhsmm-master" type="462c0819:PsiDirectoryNode" />
+              <item name="pyhsmm-develop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pyhsmm-develop" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="pyhsmm-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pyhsmm-master" type="462c0819:PsiDirectoryNode" />
+              <item name="pyhsmm-develop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pyhsmm-develop" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pyhsmm-develop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pyhsmm-develop" type="462c0819:PsiDirectoryNode" />
               <item name="examples" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pyhsmm-develop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pyhsmm-develop" type="462c0819:PsiDirectoryNode" />
+              <item name="pyhsmm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pyhsmm-develop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pyhsmm-develop" type="462c0819:PsiDirectoryNode" />
+              <item name="pyhsmm" type="462c0819:PsiDirectoryNode" />
+              <item name="basic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pyhsmm-develop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pyhsmm-develop" type="462c0819:PsiDirectoryNode" />
+              <item name="pyhsmm" type="462c0819:PsiDirectoryNode" />
+              <item name="internals" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pyhsmm-develop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="pyhsmm-develop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 (virtamed) &gt;" type="70bed36:NamedLibraryElementNode" />
             </path>
           </expand>
           <select />
@@ -66,10 +199,12 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../pyhsmm-develop" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -82,6 +217,35 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="pyhsmm_sandbox" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pyhsmm-develop" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/examples" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/examples/pyhsmm_sandbox.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.pyhsmm_sandbox" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -96,40 +260,121 @@
       <workItem from="1561189822388" duration="991000" />
       <workItem from="1561190852538" duration="625000" />
       <workItem from="1561380080690" duration="595000" />
+      <workItem from="1562313261103" duration="10795000" />
+      <workItem from="1562605983160" duration="5039000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2211000" />
+    <option name="totallyTimeSpent" value="18045000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="25" width="1545" height="875" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25617078" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2621748" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3297587" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3994638" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.328877" />
-      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50100064" side_tool="true" weight="0.3297587" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49966645" weight="0.3297587" />
+      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49899933" weight="0.3297587" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.37758505" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32955304" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/examples/pyhsmm_sandbox.py</url>
+          <line>140</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/examples/pyhsmm_sandbox.py</url>
+          <line>157</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file:///usr/share/miniconda3/envs/virtamed/lib/python3.6/site-packages/pybasicbayes-0.2.4-py3.6-linux-x86_64.egg/pybasicbayes/distributions/mixturedistribution.py</url>
+          <line>51</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file:///usr/share/miniconda3/envs/virtamed/lib/python3.6/site-packages/pybasicbayes-0.2.4-py3.6-linux-x86_64.egg/pybasicbayes/distributions/multinomial.py</url>
+          <line>123</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file:///usr/share/miniconda3/envs/virtamed/lib/python3.6/site-packages/pybasicbayes-0.2.4-py3.6-linux-x86_64.egg/pybasicbayes/distributions/multinomial.py</url>
+          <line>129</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file:///usr/share/miniconda3/envs/virtamed/lib/python3.6/site-packages/pybasicbayes-0.2.4-py3.6-linux-x86_64.egg/pybasicbayes/distributions/multinomial.py</url>
+          <line>112</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file:///usr/share/miniconda3/envs/virtamed/lib/python3.6/site-packages/pybasicbayes-0.2.4-py3.6-linux-x86_64.egg/pybasicbayes/distributions/mixturedistribution.py</url>
+          <line>53</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/pyhsmm_develop$pyhsmm_sandbox.coverage" NAME="pyhsmm_sandbox Coverage Results" MODIFIED="1562614650432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/examples" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>data[0]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>for d in data:
+    print(d)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>np.bincount(d, minlength=K) for d in data)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>np.bincount(d, minlength=K) for d in data</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>s.data[s.stateseq == state]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>np.array(self._sigma_mf)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pyhsmm/internals/hmm_messages.h">
@@ -138,9 +383,6 @@
           <caret line="239" column="11" selection-start-line="239" selection-start-column="11" selection-end-line="239" selection-end-column="11" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pyhsmm/internals/hmm_messages_interface.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/pyhsmm/internals/hsmm_messages_interface.cpp">
       <provider selected="true" editor-type-id="text-editor" />
@@ -165,7 +407,122 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/examples/hsmm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pyhsmm/basic/distributions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/share/miniconda3/envs/virtamed/lib/python3.6/site-packages/pybasicbayes-0.2.4-py3.6-linux-x86_64.egg/pybasicbayes/util/general.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5868">
+          <caret line="327" selection-start-line="327" selection-end-line="327" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/share/miniconda3/envs/virtamed/lib/python3.6/site-packages/pybasicbayes-0.2.4-py3.6-linux-x86_64.egg/pybasicbayes/distributions/poisson.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/share/miniconda3/envs/virtamed/lib/python3.6/site-packages/pybasicbayes-0.2.4-py3.6-linux-x86_64.egg/pybasicbayes/distributions/gaussian.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="196" selection-start-line="196" selection-end-line="196" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pyhsmm/internals/transitions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="84" selection-start-line="84" selection-end-line="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/share/miniconda3/envs/virtamed/lib/python3.6/site-packages/pandas/tseries/offsets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pyhsmm/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="460" selection-start-line="460" selection-end-line="460" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/pyhsmm_sandbox.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="140" selection-start-line="140" selection-end-line="140" />
+          <folding>
+            <element signature="e#218#236#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/share/miniconda3/envs/virtamed/lib/python3.6/site-packages/pybasicbayes-0.2.4-py3.6-linux-x86_64.egg/pybasicbayes/distributions/mixturedistribution.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/share/miniconda3/envs/virtamed/lib/python3.6/site-packages/pybasicbayes-0.2.4-py3.6-linux-x86_64.egg/pybasicbayes/distributions/multinomial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="129" selection-start-line="129" selection-end-line="129" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pyhsmm/internals/hmm_states.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pyhsmm/internals/hmm_messages_interface.cpp">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pyhsmm/internals/hsmm_messages_interface.pyx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#174#192#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pyhsmm/internals/hmm_messages_interface.pyx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pyhsmm/internals/hsmm_states.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="504" column="9" selection-start-line="504" selection-start-column="9" selection-end-line="504" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
