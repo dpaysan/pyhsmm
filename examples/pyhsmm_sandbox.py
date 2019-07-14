@@ -21,6 +21,7 @@ from pybasicbayes.distributions.multinomial import Categorical
 from pybasicbayes.distributions.mixturedistribution import DistributionMixture
 
 
+
 # ---
 #
 # ## Single Sequence Experiments
@@ -157,12 +158,13 @@ posteriormodel.add_data(np.array(obs))
 
 from pyhsmm.util.text import progprint_xrange
 
-for idx in progprint_xrange(150):
+for idx in progprint_xrange(1000):
     posteriormodel.resample_model()
 
 posteriormodel.plot()
 
 plt.show()
+print("finished")
 
 
 
