@@ -158,13 +158,28 @@ posteriormodel.add_data(np.array(obs))
 
 from pyhsmm.util.text import progprint_xrange
 
-for idx in progprint_xrange(1000):
+print('Gibbs sampling for initialization')
+
+for idx in progprint_xrange(25):
     posteriormodel.resample_model()
 
+plt.figure()
 posteriormodel.plot()
+plt.gcf().suptitle('Gibbs-sampled initialization')
+
+print('EM')
+
+likes = posteriormodel.EM_fit()
+
+plt.figure()
+posteriormodel.plot()
+plt.gcf().suptitle('EM fit')
+
+plt.figure()
+plt.plot(likes)
+plt.gcf().suptitle('log likelihoods during EM')
 
 plt.show()
-print("finished")
 
 
 
