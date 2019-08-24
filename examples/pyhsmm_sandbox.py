@@ -19,6 +19,9 @@ from pyhsmm.models import WeakLimitHDPHSMM, HSMM
 from pybasicbayes.distributions.gaussian import Gaussian
 from pybasicbayes.distributions.multinomial import Categorical
 from pybasicbayes.distributions.mixturedistribution import DistributionMixture
+import pickle
+from pyhsmm.util.eaf_processing import to_eaf
+
 
 
 
@@ -32,17 +35,21 @@ from pybasicbayes.distributions.mixturedistribution import DistributionMixture
 
 # We first read in the symbol sequence being our observations. To this end we have stored the symbol sequence for the run 692 as a csv file. Note that the zSymbols refer to the respective combination of the categorical observables as defined in the iterate_v3 config yaml.
 
-# In[5]:
+# In[3]:
+
+import sys
+sys.path.append('/home/daniel/PycharmProjects/Projects/virtamed_3_6')
+
+pickle_in = open("./obs_records_dict.p","rb")
+obs_records_dict = pickle.load(pickle_in)
+
+obs_list = obs_records_dict["obs"]
+records = obs_records_dict["records"]
+
+pickle_in = open("./decode_df.p", "rb")
+decode_df = pd.read_pickle("./decode_df.p")
 
 
-obs = pd.read_csv('/home/daniel/PycharmProjects/Projects/virtamed_3_6/Debug/692_symbols_iterate_v3_version.csv')
-obs = obs.drop(["0", "Unnamed: 0"], axis = 1)
-
-
-# In[6]:
-
-
-obs.head()
 
 
 # ### Definition of initial parameters
@@ -154,7 +161,7 @@ pi_0 = [0.990, 0.002, 0.002, 0.002, 0.002, 0.002]
 
 posteriormodel = HSMM(obs_distns=mixtures, dur_distns=dur_distns, trans_matrix=tmat,
                       pi_0=pi_0, alpha=1., init_state_concentration=1.)
-posteriormodel.add_data(np.array(obs))
+posteriormodel.add_data(np.array(obs_list[1]))
 
 from pyhsmm.util.text import progprint_xrange
 
@@ -170,6 +177,11 @@ plt.gcf().suptitle('Gibbs-sampled initialization')
 print('EM')
 
 likes = posteriormodel.EM_fit()
+
+state_seq = posteriormodel.stateseqs[0]
+states = ["DX", "place_tool", "cutting_loop", "coag_loop", "clear_view", "handle_chips"]
+eaf_file = "/home/daniel/PycharmProjects/Projects/virtamed_3_6/Data/2018_01_18_12_57_05_692/2018_01_18_12_57_05_692_1.eaf"
+to_eaf(state_seq,  decode_df[1],  states, eaf_file, output_dir=".")
 
 plt.figure()
 posteriormodel.plot()
