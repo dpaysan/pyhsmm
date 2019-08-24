@@ -40,6 +40,18 @@ from pyhsmm.util.eaf_processing import to_eaf
 import sys
 sys.path.append('/home/daniel/PycharmProjects/Projects/virtamed_3_6')
 
+"""
+the following data files are given in the obs_records dictionary and the 
+decoded_df object:
+
+'Data/2018_01_18_13_45_22_022/2018_01_18_13_45_22_022.eaf'
+'Data/2018_01_18_12_57_05_692/2018_01_18_12_57_05_692_1.eaf'
+'Data/2018_01_18_12_42_56_973/2018_01_18_12_42_56_973.eaf'
+'Data/2018_01_18_12_47_42_257/2018_01_18_12_47_42_257.eaf'
+'Data/2018_01_18_12_51_23_562/2018_01_18_12_51_23_562.eaf'
+'Data/2018_01_18_13_01_17_229/2018_01_18_13_01_17_229.eaf'
+"""
+
 pickle_in = open("./obs_records_dict.p","rb")
 obs_records_dict = pickle.load(pickle_in)
 
