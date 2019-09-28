@@ -1,6 +1,6 @@
 from __future__ import division
 import numpy as np
-from scipy.misc import logsumexp
+from scipy.special import logsumexp
 
 from pybasicbayes.distributions import *
 from pybasicbayes.models import MixtureDistribution
@@ -104,6 +104,13 @@ class NegativeBinomialFixedRVariantDuration(
 
 class NegativeBinomialIntegerRVariantDuration(
         NegativeBinomialIntegerRVariant,
+        DurationDistribution):
+    pass
+
+
+class GaussianDuration(
+        _StartAtOneMixin,
+        Gaussian,
         DurationDistribution):
     pass
 

@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 from matplotlib.gridspec import GridSpec, GridSpecFromSubplotSpec
 from matplotlib import cm
 from warnings import warn
-from scipy.misc import logsumexp
+from scipy.special import logsumexp
 
 from pyhsmm.basic.abstractions import Model, ModelGibbsSampling, \
     ModelEM, ModelMAPEM, ModelMeanField, ModelMeanFieldSVI, ModelParallelTempering
@@ -632,12 +632,36 @@ class _HMMSVI(_HMMBase,ModelMeanFieldSVI):
                 prob,stepsize)
 
 
-class _HMMEM(_HMMBase,ModelEM):
+class _HMMEM(_HMMBase,ModelEM, ModelMAPEM):
     def EM_step(self):
         assert len(self.states_list) > 0, 'Must have data to run EM'
         self._clear_caches()
         self._E_step()
         self._M_step()
+
+    def MAP_EM_step(self):
+        assert len(self.states_list) > 0, 'Must have data to run BEM'
+        self._clear_caches()
+        self._E_step()
+        self._BM_step()
+
+    def _BM_step(self):
+        self._BM_step_obs_distns()
+        self._BM_step_init_state_distn()
+        self._BM_step_trans_distn()
+
+    def _BM_step_obs_distns(self):
+        for state, distn in enumerate(self.obs_distns):
+            distn.MAP([s.data for s in self.states_list],
+                    [s.expected_states[:,state] for s in self.states_list])
+
+    def _BM_step_init_state_distn(self):
+        self.init_state_distn.MAP(
+                expected_states_list=[s.expected_states[0] for s in self.states_list])
+
+    def _BM_step_trans_distn(self):
+        self.trans_distn.MAP(
+                expected_transcounts=[s.expected_transcounts for s in self.states_list])
 
     def _E_step(self):
         for s in self.states_list:

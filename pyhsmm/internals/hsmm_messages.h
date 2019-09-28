@@ -7,6 +7,7 @@
 
 #include "util.h"
 #include "nptypes.h"
+#include "stdio.h"
 
 namespace hsmm
 {
@@ -61,7 +62,9 @@ namespace hsmm
             for(int i=0; i<M; i++) {
                 if (ebetastarl(t,i) != ebetastarl(t,i)) {
                     ebetastarl(i,t) = -1.0*numeric_limits<Type>::infinity();
+                    printf("Numerical issue encountered");
                 }
+                //Possible Problem source to be investigated
             }
             if (likely(t > 0)) {
                 cmax = ebetastarl.row(t).maxCoeff();
@@ -70,6 +73,7 @@ namespace hsmm
                 for(int i=0; i<M; i++) {
                     if (ebetastarl(t,i) != ebetastarl(t,i)) {
                         ebetastarl(i,t) = -1.0*numeric_limits<Type>::infinity();
+                        printf("Numerical issue encountered");
                     }
                 }
             }

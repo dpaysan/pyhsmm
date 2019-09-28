@@ -30,6 +30,7 @@ pyhsmm/internals/util.h
 pyhsmm/util/__init__.py
 pyhsmm/util/cstats.cpp
 pyhsmm/util/cstats.pyx
+pyhsmm/util/eaf_processing.py
 pyhsmm/util/general.py
 pyhsmm/util/plot.py
 pyhsmm/util/profiling.py
