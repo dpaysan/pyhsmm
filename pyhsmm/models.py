@@ -21,6 +21,7 @@ from pyhsmm.util.general import list_split
 from pyhsmm.util.profiling import line_profiled
 from pybasicbayes.util.stats import atleast_2d
 from pybasicbayes.distributions.gaussian import Gaussian
+from pyhsmm.util.plot import annotate_heatmap, heatmap
 
 
 ################
@@ -64,6 +65,20 @@ class _HMMBase(Model):
                     pi_0=pi_0)
 
         self._clear_caches()
+
+    def plot_trans_distn(self, states_list):
+        fig, ax = plt.subplots()
+
+        tmat = self.trans_distn.trans_matrix
+
+        im, cbar = heatmap(tmat, states_list, states_list, ax=ax,
+                           cmap="Blues", cbarlabel="Transition probability")
+        texts = annotate_heatmap(im, valfmt="{x:.2f} ")
+
+        fig.tight_layout()
+        plt.show()
+
+        return fig
 
     def add_data(self,data,stateseq=None,fixed_stateseq=False,**kwargs):
         self.states_list.append(
@@ -253,7 +268,10 @@ class _HMMBase(Model):
         fig = fig if fig else self.make_figure()
         feature_ax, stateseq_axs = self._get_axes(fig)
 
-        sp1_artists = self.plot_observations(feature_ax,plot_slice=plot_slice,update=update)
+        try:
+            sp1_artists = self.plot_observations(feature_ax,plot_slice=plot_slice,update=update)
+        except IndexError:
+            sp1_artists = []
 
         assert len(stateseq_axs) == len(self.states_list)
         sp2_artists = \
@@ -265,7 +283,7 @@ class _HMMBase(Model):
         return sp1_artists + sp2_artists
 
     def _get_axes(self,fig):
-        # TODO is attaching these to the figure a good idea? why not save them
+        # TODO is attaching theseplot to the figure a good idea? why not save them
         # here and reuse them if we recognize the figure being passed in
         sz = self._fig_sz
 
@@ -379,7 +397,10 @@ class _HMMBase(Model):
         state_colors = self._get_colors(scalars=True)
 
         self._plot_stateseq_pcolor(s,ax,state_colors,plot_slice,update)
-        data_values_artist = self._plot_stateseq_data_values(s,ax,state_colors,plot_slice,update)
+        try:
+            data_values_artist = self._plot_stateseq_data_values(s,ax,state_colors,plot_slice,update)
+        except Exception:
+            data_values_artist = None
 
         if draw: plt.draw()
 
@@ -932,41 +953,58 @@ class _HSMMBase(_HMMBase):
             **kwargs))
         return self.states_list[-1]
 
+    def summary(self, state, state_list):
+        print('Model summary for state '+str(state_list[state]))
+        print('-----------------------------------------')
+        print('   Duration model')
+        print('      '+self.dur_distns[state].toString())
+        print('')
+        print('   Emission model')
+        print('      '+self.obs_distns[state].toString())
+
+    def total_summary(self, state_list):
+        print('Complete Model Summary')
+        print('###############################')
+        for state in range(len(state_list)):
+            self.summary(state, state_list)
+            print('')
+        self.plot_trans_distn(state_list)
+
+
+
     @property
     def num_parameters(self):
         return sum(o.num_parameters() for o in self.obs_distns) \
                 + sum(d.num_parameters() for d in self.dur_distns) \
                 + self.num_states**2 - self.num_states
 
-#     def plot_durations(self,colors=None,states_objs=None):
-#         if colors is None:
-#             colors = self._get_colors()
-#         if states_objs is None:
-#             states_objs = self.states_list
+    def plot_durations(self,colors=None,states_objs=None):
+        if colors is None:
+            colors = self._get_colors()
+        if states_objs is None:
+            states_objs = self.states_list
+        used_states = self.used_states
+        for state,d in enumerate(self.dur_distns):
+            if state in used_states:
+                d.plot(color=colors[state],
+                        data=[s.durations[s.stateseq_norep == state]
+                            for s in states_objs])
+        plt.title('Durations')
 
-#         cmap = cm.get_cmap()
-#         used_states = self._get_used_states(states_objs)
-#         for state,d in enumerate(self.dur_distns):
-#             if state in used_states:
-#                 d.plot(color=cmap(colors[state]),
-#                         data=[s.durations[s.stateseq_norep == state]
-#                             for s in states_objs])
-#         plt.title('Durations')
-
-#     def plot(self,color=None):
-#         plt.gcf() #.set_size_inches((10,10))
-#         colors = self._get_colors(self.states_list)
-
-#         num_subfig_cols = len(self.states_list)
-#         for subfig_idx,s in enumerate(self.states_list):
-#             plt.subplot(3,num_subfig_cols,1+subfig_idx)
-#             self.plot_observations(colors=colors,states_objs=[s])
-
-#             plt.subplot(3,num_subfig_cols,1+num_subfig_cols+subfig_idx)
-#             s.plot(colors_dict=colors)
-
-#             plt.subplot(3,num_subfig_cols,1+2*num_subfig_cols+subfig_idx)
-#             self.plot_durations(colors=colors,states_objs=[s])
+    # def plot(self,color=None):
+    #     plt.gcf() #.set_size_inches((10,10))
+    #     colors = self._get_colors(self.states_list)
+    #
+    #     num_subfig_cols = len(self.states_list)
+    #     for subfig_idx,s in enumerate(self.states_list):
+    #         plt.subplot(3,num_subfig_cols,1+subfig_idx)
+    #         self.plot_observations(colors=colors,states_objs=[s])
+    #
+    #         plt.subplot(3,num_subfig_cols,1+num_subfig_cols+subfig_idx)
+    #         s.plot(colors_dict=colors)
+    #
+    #         plt.subplot(3,num_subfig_cols,1+2*num_subfig_cols+subfig_idx)
+    #         self.plot_durations(colors=colors,states_objs=[s])
 
 
 class _HSMMGibbsSampling(_HSMMBase,_HMMGibbsSampling):
