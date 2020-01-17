@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="64fb9f47-a3c8-4967-a12e-4a70f4577fcb" name="Default Changelist" comment="sandbox extended">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/pyhsmm-develop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pyhsmm-develop.iml" afterDir="false" />
+    <list default="true" id="64fb9f47-a3c8-4967-a12e-4a70f4577fcb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyhsmm/internals/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/pyhsmm/internals/.gitignore" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,33 +39,28 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JupyterTrust" id="b1312add-1013-4eec-b83f-9915b6cf3240" />
   <component name="ProjectId" id="1OV96DKrKugo5dPduspmWVIXQXb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../pybasicbayes-develop" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/thesis/src/scripts" />
       <recent name="$PROJECT_DIR$" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -117,6 +108,18 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -150,7 +153,11 @@
       <workItem from="1569273148822" duration="1871000" />
       <workItem from="1569681053111" duration="277000" />
       <workItem from="1570367737582" duration="641000" />
-      <workItem from="1571037580228" duration="2212000" />
+      <workItem from="1571037580228" duration="2403000" />
+      <workItem from="1571040568450" duration="122000" />
+      <workItem from="1578073255524" duration="1231000" />
+      <workItem from="1578468652380" duration="1227000" />
+      <workItem from="1578640950966" duration="24488000" />
     </task>
     <task id="LOCAL-00001" summary="updated hsmm_states and sandbox">
       <created>1562741164151</created>
@@ -187,7 +194,21 @@
       <option name="project" value="LOCAL" />
       <updated>1569681292549</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="resolved merge conflicts for fork">
+      <created>1571040409808</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1571040409808</updated>
+    </task>
+    <task id="LOCAL-00007" summary="multiple major changes to make it compatible with the thesis work and improve the overall fuctionality">
+      <created>1579271038990</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1579271038990</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,7 +233,63 @@
     <MESSAGE value="implemented writing results to eaf&#10;results sensibility to be checked and investigated" />
     <MESSAGE value="fixed implementation" />
     <MESSAGE value="sandbox extended" />
-    <option name="LAST_COMMIT_MESSAGE" value="sandbox extended" />
+    <MESSAGE value="resolved merge conflicts for fork" />
+    <MESSAGE value="multiple major changes to make it compatible with the thesis work and improve the overall fuctionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="multiple major changes to make it compatible with the thesis work and improve the overall fuctionality" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2445" y="234" width="860" height="803" key="CommitChangelistDialog2" timestamp="1579271038919">
+      <screen x="1920" y="38" width="1920" height="1200" />
+    </state>
+    <state x="2445" y="234" width="860" height="803" key="CommitChangelistDialog2/67.27.1853.1053/1920.38.1920.1200@1920.38.1920.1200" timestamp="1579271038919" />
+    <state x="2663" y="396" width="424" height="480" key="FileChooserDialogImpl" timestamp="1578673032421">
+      <screen x="1920" y="38" width="1920" height="1200" />
+    </state>
+    <state x="2663" y="396" width="424" height="480" key="FileChooserDialogImpl/67.27.1853.1053/1920.38.1920.1200@1920.38.1920.1200" timestamp="1578673032421" />
+    <state width="1807" height="401" key="GridCell.Tab.0.bottom" timestamp="1578855818680">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1874" height="401" key="GridCell.Tab.0.bottom/67.27.1853.1053/1920.38.1920.1200@1920.38.1920.1200" timestamp="1578677834349" />
+    <state width="1807" height="401" key="GridCell.Tab.0.bottom/67.27.1853.1053/1920.38.1920.1200@67.27.1853.1053" timestamp="1578855818680" />
+    <state width="1807" height="401" key="GridCell.Tab.0.center" timestamp="1578855818680">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1874" height="401" key="GridCell.Tab.0.center/67.27.1853.1053/1920.38.1920.1200@1920.38.1920.1200" timestamp="1578677834349" />
+    <state width="1807" height="401" key="GridCell.Tab.0.center/67.27.1853.1053/1920.38.1920.1200@67.27.1853.1053" timestamp="1578855818680" />
+    <state width="1807" height="401" key="GridCell.Tab.0.left" timestamp="1578855818680">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1874" height="401" key="GridCell.Tab.0.left/67.27.1853.1053/1920.38.1920.1200@1920.38.1920.1200" timestamp="1578677834349" />
+    <state width="1807" height="401" key="GridCell.Tab.0.left/67.27.1853.1053/1920.38.1920.1200@67.27.1853.1053" timestamp="1578855818680" />
+    <state width="1807" height="401" key="GridCell.Tab.0.right" timestamp="1578855818680">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1874" height="401" key="GridCell.Tab.0.right/67.27.1853.1053/1920.38.1920.1200@1920.38.1920.1200" timestamp="1578677834349" />
+    <state width="1807" height="401" key="GridCell.Tab.0.right/67.27.1853.1053/1920.38.1920.1200@67.27.1853.1053" timestamp="1578855818680" />
+    <state width="1807" height="401" key="GridCell.Tab.1.bottom" timestamp="1578855818680">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1874" height="401" key="GridCell.Tab.1.bottom/67.27.1853.1053/1920.38.1920.1200@1920.38.1920.1200" timestamp="1578677835535" />
+    <state width="1807" height="401" key="GridCell.Tab.1.bottom/67.27.1853.1053/1920.38.1920.1200@67.27.1853.1053" timestamp="1578855818680" />
+    <state width="1807" height="401" key="GridCell.Tab.1.center" timestamp="1578855818680">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1874" height="401" key="GridCell.Tab.1.center/67.27.1853.1053/1920.38.1920.1200@1920.38.1920.1200" timestamp="1578677835535" />
+    <state width="1807" height="401" key="GridCell.Tab.1.center/67.27.1853.1053/1920.38.1920.1200@67.27.1853.1053" timestamp="1578855818680" />
+    <state width="1807" height="401" key="GridCell.Tab.1.left" timestamp="1578855818680">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1874" height="401" key="GridCell.Tab.1.left/67.27.1853.1053/1920.38.1920.1200@1920.38.1920.1200" timestamp="1578677835535" />
+    <state width="1807" height="401" key="GridCell.Tab.1.left/67.27.1853.1053/1920.38.1920.1200@67.27.1853.1053" timestamp="1578855818680" />
+    <state width="1807" height="401" key="GridCell.Tab.1.right" timestamp="1578855818680">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1874" height="401" key="GridCell.Tab.1.right/67.27.1853.1053/1920.38.1920.1200@1920.38.1920.1200" timestamp="1578677835535" />
+    <state width="1807" height="401" key="GridCell.Tab.1.right/67.27.1853.1053/1920.38.1920.1200@67.27.1853.1053" timestamp="1578855818680" />
+    <state x="2475" y="374" width="800" height="524" key="Vcs.Push.Dialog.v2" timestamp="1579271070720">
+      <screen x="1920" y="38" width="1920" height="1200" />
+    </state>
+    <state x="2475" y="374" width="800" height="524" key="Vcs.Push.Dialog.v2/67.27.1853.1053/1920.38.1920.1200@1920.38.1920.1200" timestamp="1579271070720" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -224,17 +301,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$USER_HOME$/.conda/envs/virtamed/lib/python3.7/site-packages/pybasicbayes-0.2.4-py3.7-linux-x86_64.egg/pybasicbayes/distributions/multinomial.py</url>
-          <line>220</line>
+          <line>223</line>
           <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyhsmm/models.py</url>
-          <line>654</line>
+          <line>675</line>
           <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$USER_HOME$/.conda/envs/virtamed/lib/python3.7/site-packages/pybasicbayes-0.2.4-py3.7-linux-x86_64.egg/pybasicbayes/distributions/multinomial.py</url>
-          <line>112</line>
+          <line>115</line>
           <option name="timeStamp" value="41" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -244,18 +321,43 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyhsmm/models.py</url>
-          <line>658</line>
+          <line>679</line>
           <option name="timeStamp" value="45" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyhsmm/models.py</url>
-          <line>662</line>
+          <line>683</line>
           <option name="timeStamp" value="46" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pyhsmm/models.py</url>
-          <line>645</line>
+          <line>666</line>
           <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/thesis/src/scripts/pyhsmm_ms_em.py</url>
+          <line>232</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/thesis/src/scripts/pyhsmm_ms_em.py</url>
+          <line>217</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/thesis/src/scripts/pyhsmm_ms_em.py</url>
+          <line>215</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/examples/pyhsmm_sandbox.py</url>
+          <line>217</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/.conda/envs/virtamed/lib/python3.7/site-packages/matplotlib/cm.py</url>
+          <line>20</line>
+          <option name="timeStamp" value="52" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -276,6 +378,6 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/pyhsmm_develop$pyhsmm_sandbox.coverage" NAME="pyhsmm_sandbox Coverage Results" MODIFIED="1569275064002" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pyhsmm_develop$pyhsmm_sandbox.coverage" NAME="pyhsmm_sandbox Coverage Results" MODIFIED="1578855806878" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
