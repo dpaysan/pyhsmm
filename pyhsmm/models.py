@@ -367,7 +367,7 @@ class _HMMBase(Model):
     def _get_colors(self,color=None,scalars=False,color_method=None):
         color_method = color_method if color_method else 'usage'
         if color is None:
-            cmap = cm.get_cmap()
+            cmap = cm.get_cmap('Set1')
 
             if color_method == 'usage':
                 freqs = self.state_usages
@@ -378,9 +378,10 @@ class _HMMBase(Model):
                 raise ValueError("color_method must be 'usage' or 'order'")
 
             unused_states = [idx for idx in range(self.num_states) if idx not in used_states]
-
-            colorseq = np.random.RandomState(0).permutation(np.linspace(0,1,self.num_states))
-            colors = dict((idx, v if scalars else cmap(v)) for idx, v in zip(used_states,colorseq))
+            #colorseq = np.random.RandomState(0).permutation(np.linspace(0,1,self.num_states))
+            colorseq = np.linspace(0, 1, self.num_states)
+            colors = dict((idx, v if scalars else cmap(v)) for idx, v in zip(sorted(self.used_states), colorseq))
+            #colors = dict((idx, v if scalars else cmap(v)) for idx, v in zip(used_states,colorseq))
 
             for state in unused_states:
                 colors[state] = cmap(1.)
@@ -427,7 +428,7 @@ class _HMMBase(Model):
         x, y = np.hstack((0,durations.cumsum())), np.array([datamin,datamax])
         C = np.atleast_2d([state_colors[state] for state in stateseq_norep])
 
-        s._pcolor_im = ax.pcolormesh(x,y,C,vmin=0,vmax=1,alpha=0.3)
+        s._pcolor_im = ax.pcolormesh(x,y,C,vmin=0,vmax=1,alpha=0.8)
         ax.set_ylim((datamin,datamax))
         ax.set_xlim((0,len(stateseq)))
         ax.set_yticks([])
