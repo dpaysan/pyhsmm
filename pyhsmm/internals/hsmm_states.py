@@ -359,7 +359,7 @@ class HSMMStatesPython(_StatesBase):
 
     ### EM
 
-    # these two methods just call _expected_statistics with the right stuff
+    # these two methods just call _expected_statistics with the right legacy
 
     def E_step(self):
         self.clear_caches()
@@ -753,7 +753,7 @@ class HSMMStatesPossibleChangepoints(_PossibleChangepointsMixin,HSMMStatesPython
 
     # TODO caching
 
-    # TODO wrap the duration stuff into single functions. reduces passing
+    # TODO wrap the duration legacy into single functions. reduces passing
     # around, reduces re-computation in this case
 
     # backwards messages potentials

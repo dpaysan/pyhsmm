@@ -115,7 +115,7 @@ class GaussianDuration(
     pass
 
 #################
-#  Model stuff  #
+#  Model legacy  #
 #################
 
 # this is extending the MixtureDistribution from basic/pybasicbayes/models.py

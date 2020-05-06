@@ -25,7 +25,7 @@ def interleave(*iterables):
     return list(chain.from_iterable(zip(*iterables)))
 
 def joindicts(dicts):
-    # stuff on right clobbers stuff on left
+    # legacy on right clobbers legacy on left
     return reduce(lambda x,y: dict(x,**y), dicts, {})
 
 def one_vs_all(stuff):

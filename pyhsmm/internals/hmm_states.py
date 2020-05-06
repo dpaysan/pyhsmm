@@ -48,7 +48,7 @@ class _StatesBase(with_metaclass(abc.ABCMeta, object)):
         new.stateseq = self.stateseq.copy()
         return new
 
-    _kwargs = {}  # used in subclasses for joblib stuff
+    _kwargs = {}  # used in subclasses for joblib legacy
 
     ### model properties
 

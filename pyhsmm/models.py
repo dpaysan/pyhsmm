@@ -498,7 +498,7 @@ class _HMMGibbsSampling(_HMMBase,ModelGibbsSampling):
         new.states_list = [s.copy_sample(new) for s in self.states_list]
         return new
 
-    ### joblib parallel stuff here
+    ### joblib parallel legacy here
 
     def _joblib_resample_states(self,states_list,num_procs):
         from joblib import Parallel, delayed
@@ -582,7 +582,7 @@ class _HMMMeanField(_HMMBase,ModelMeanField):
         vlb += sum(o.get_vlb() for o in self.obs_distns)
         return vlb
 
-    ### joblib parallel stuff
+    ### joblib parallel legacy
 
     def _joblib_meanfield_update_states(self,states_list,num_procs):
         if len(states_list) > 0:
@@ -610,7 +610,7 @@ class _HMMMeanField(_HMMBase,ModelMeanField):
 
 class _HMMSVI(_HMMBase,ModelMeanFieldSVI):
     # NOTE: classes with this mixin should also have the _HMMMeanField mixin for
-    # joblib/multiprocessing stuff to work
+    # joblib/multiprocessing legacy to work
     def meanfield_sgdstep(self,minibatch,prob,stepsize,num_procs=0,**kwargs):
         ## compute the local mean field step for the minibatch
         mb_states_list = self._get_mb_states_list(minibatch,**kwargs)
