@@ -2,14 +2,19 @@ from __future__ import print_function
 from setuptools import setup, Extension
 from setuptools.command.build_ext import build_ext as _build_ext
 from setuptools.command.sdist import sdist as _sdist
-from distutils.command.clean import clean as _clean
+try:
+    from setuptools.command.clean import clean as _clean
+except ImportError:
+    from distutils.command.clean import clean as _clean
 from distutils.errors import CompileError
 from warnings import warn
 import os
 import sys
 from glob import glob
 import tarfile
+import requests
 import shutil
+
 
 from future.standard_library import install_aliases
 install_aliases()
@@ -68,15 +73,17 @@ if not os.path.exists('deps'):
     os.mkdir('deps')
 
 # download Eigen if we don't have it in deps
-eigenurl = 'http://bitbucket.org/eigen/eigen/get/3.2.6.tar.gz'
+eigenurl = 'https://gitlab.com/libeigen/eigen/-/archive/3.2.10/eigen-3.2.10.tar.gz'
 eigentarpath = os.path.join('deps', 'Eigen.tar.gz')
 eigenpath = os.path.join('deps', 'Eigen')
 if not os.path.exists(eigenpath):
     print('Downloading Eigen...')
-    urlretrieve(eigenurl, eigentarpath)
+    r = requests.get(eigenurl)
+    with open(eigentarpath, 'wb') as outfile:
+        outfile.write(r.content)
     with tarfile.open(eigentarpath, 'r') as tar:
         tar.extractall('deps')
-    thedir = glob(os.path.join('deps', 'eigen-eigen-*'))[0]
+    thedir = glob(os.path.join('deps', 'eigen-*'))[0]
     shutil.move(os.path.join(thedir, 'Eigen'), eigenpath)
     print('...done!')
 

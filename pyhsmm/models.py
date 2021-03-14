@@ -253,19 +253,17 @@ class _HMMBase(Model):
 
     _fig_sz = 6
 
-    def make_figure(self,**kwargs):
-        sz = self._fig_sz
-
+    def make_figure(self, fig_size=[12,6],**kwargs):
         if len(self.states_list) <= 2:
-            fig = plt.figure(figsize=(sz+len(self.states_list),sz),**kwargs)
+            fig = plt.figure(figsize=fig_size,**kwargs)
         else:
-            fig = plt.figure(figsize=(2*sz,sz),**kwargs)
+            fig = plt.figure(figsize=fig_size,**kwargs)
 
         return fig
 
-    def plot(self,fig=None,plot_slice=slice(None),update=False,draw=True):
+    def plot(self,fig=None,plot_slice=slice(None),update=False,draw=True, fig_size=[12,6]):
         update = update and (fig is not None)
-        fig = fig if fig else self.make_figure()
+        fig = fig if fig else self.make_figure(fig_size=fig_size)
         feature_ax, stateseq_axs = self._get_axes(fig)
 
         try:
@@ -367,7 +365,7 @@ class _HMMBase(Model):
     def _get_colors(self,color=None,scalars=False,color_method=None):
         color_method = color_method if color_method else 'usage'
         if color is None:
-            cmap = cm.get_cmap('Set1')
+            cmap = cm.get_cmap('tab20')
 
             if color_method == 'usage':
                 freqs = self.state_usages
@@ -428,10 +426,11 @@ class _HMMBase(Model):
         x, y = np.hstack((0,durations.cumsum())), np.array([datamin,datamax])
         C = np.atleast_2d([state_colors[state] for state in stateseq_norep])
 
-        s._pcolor_im = ax.pcolormesh(x,y,C,vmin=0,vmax=1,alpha=0.8)
+        s._pcolor_im = ax.pcolormesh(x,y,C,vmin=0,vmax=1,alpha=0.9, cmap="tab20")
         ax.set_ylim((datamin,datamax))
         ax.set_xlim((0,len(stateseq)))
         ax.set_yticks([])
+        ax.set_xticks([])
 
     def _plot_stateseq_data_values(self,s,ax,state_colors,plot_slice,update):
         from matplotlib.collections import LineCollection
